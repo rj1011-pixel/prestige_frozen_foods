@@ -1,0 +1,97 @@
+/* Custom styling for About section */
+.about-section {
+  flex: 0 0 65% !important;
+  max-width: 65% !important;
+  padding: 0;
+}
+.left-image-size{
+  padding-top: 160px;
+  margin-left: -60px; 
+
+}
+.accordion-body-new{
+    padding-top: 0;
+}
+.team-section {
+  background-color: #f9f9f9;
+}
+
+.team-section .card {
+  border-radius: 15px;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 420px; /* normal size */
+}
+
+.team-section .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  height: auto; /* expands automatically on hover */
+  z-index: 2;
+}
+
+.team-section .card-img-top {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: center top;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.team-section .card-body {
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  max-height: 100px; /* show limited content by default */
+}
+
+/* When hovered, reveal full info smoothly */
+.team-section .card:hover .card-body {
+  max-height: 400px; /* increase limit */
+  overflow: visible;
+}
+
+/* limit text lines initially */
+.team-section .card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* show only 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+/* when hovered, show full text */
+.team-section .card:hover .card-text {
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
+/* Text truncation for long content */
+.team-section .card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;  /* number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.right_side{
+  padding: 0px;
+  margin: 0px;
+  width: 700px;
+}
+.section-heading{
+  padding: 0px;
+  margin: 0px;
+  
+}
+.row_side{
+  padding-top: -350px;
+  margin-left: 10px;
+}
